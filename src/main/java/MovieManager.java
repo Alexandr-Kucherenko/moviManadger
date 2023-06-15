@@ -45,43 +45,7 @@ public class MovieManager {
 
     }
 
-    public String[] findLastMoreThanLimit() {
-        int resultlength;
-        if (movies.length > limit) {
-            resultlength = movies.length;
-        } else {
-            resultlength = limit;
-        }
-        String[] tmp = new String[resultlength];
-        for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = movies[movies.length - 1 - i];
 
-
-        }
-        return tmp;
-
-
-    }
-
-    public String[] findLastLimit() {
-        int limit = 3;
-        int resultlength;
-
-        if (movies.length > limit) {
-            resultlength = limit;
-
-        } else {
-            resultlength = movies.length;
-        }
-        String[] tmp = new String[resultlength];
-        for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = movies[movies.length - 1 - i];
-
-
-        }
-        return tmp;
-
-    }
 }
 
 
